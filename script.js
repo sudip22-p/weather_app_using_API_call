@@ -106,7 +106,7 @@ async function checkWeather(cityName) {
 /*on click search*/
 searchBtn.addEventListener("click", () => {
     weatherImg.src="./assets/loading.gif";
-    // setTimeout(()=>{
+    setTimeout(()=>{
         checkWeather(inputBar.value);
-    // },1800);
+    },1800);
 });
