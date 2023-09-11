@@ -1,42 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Check</title>
-    <link rel="shortcut icon" href="#" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <div class="wrapper">
-        <div class="search-box">
-            <input id="search-bar" type="text" placeholder="Enter the place" required>
-            <div id="search-icon">
-                <i class="fa fa-search"></i></div>
+      <div class="search-box">
+        <input
+          id="search-bar"
+          type="text"
+          placeholder="Enter the place"
+          required
+        />
+        <div id="search-icon">
+          <i class="fa fa-search"></i>
         </div>
-        <div id="weather-image"><img src="./assets/loading.webp" alt="Rainy" draggable="false"></div>
-        <div class="primary-info">
-            <div id="measure">- -<sup>o</sup>C</div>
-            <div id="word-detail">- - - - - - - - - - - - - -</div>
+      </div>
+      <div id="weather-image">
+        <img src="./assets/loading.webp" alt="Rainy" draggable="false" />
+      </div>
+      <div class="primary-info">
+        <div id="measure">- -<sup>o</sup>C</div>
+        <div id="word-detail">- - - - - - - - - - - - - -</div>
+      </div>
+      <div class="secondary-info">
+        <div class="bottom-show">
+          <div class="humid-img">
+            <img
+              src="./assets/rainDrop.webp"
+              alt="Rain Drop"
+              draggable="false"
+            />
+          </div>
+          <div class="bottom-measure">
+            <div class="secondary-big-text" id="humid-percentage">- -%</div>
+            <h3 class="secondary-small-text">Humidity</h3>
+          </div>
         </div>
-        <div class="secondary-info">
-            <div class="bottom-show">
-                <div class="humid-img"><img src="./assets/rainDrop.webp" alt="Rain Drop" draggable="false"></div>
-                <div class="bottom-measure">
-                    <div class="secondary-big-text" id="humid-percentage">- -%</div>
-                    <h3 class="secondary-small-text">Humidity</h3>
-                </div>
-            </div>
-            <div class="bottom-show">
-                <div class="wind-img"><img src="./assets/windImg.webp" alt="Wind Image" draggable="false"></div>
-                <div class="bottom-measure">
-                    <div class="secondary-big-text" id="wind-speed">- -Km/H</div>
-                    <h3 class="secondary-small-text">Wind Speed</h3>
-                </div>
-            </div>
+        <div class="bottom-show">
+          <div class="wind-img">
+            <img
+              src="./assets/windImg.webp"
+              alt="Wind Image"
+              draggable="false"
+            />
+          </div>
+          <div class="bottom-measure">
+            <div class="secondary-big-text" id="wind-speed">- -Km/H</div>
+            <h3 class="secondary-small-text">Wind Speed</h3>
+          </div>
         </div>
+      </div>
     </div>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
