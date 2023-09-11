@@ -5,32 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Check</title>
     <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div class="wrapper">
         <div class="search-box">
-            <div id="search-bar">Nepal</div>
-            <div id="search-icon">Search-icon</div>
+            <input id="search-bar" type="text" placeholder="Enter the place" required>
+            <div id="search-icon">
+                <i class="fa fa-search"></i></div>
         </div>
-        <div id="weather-image">Sunny/Rainy Image</div>
+        <div id="weather-image"><img src="./assets/loading.webp" alt="Rainy"></div>
         <div class="primary-info">
-            <div id="measure">15<sup>o</sup>C</div>
-            <div id="word-detail">Scattered Clouds</div>
+            <div id="measure">- -<sup>o</sup>C</div>
+            <div id="word-detail">- - - - - - - - - - - - - -</div>
         </div>
         <div class="secondary-info">
-            <div id="humidity-show">
-                <div class="img">rain drop image</div>
-                <div class="humidity-measure">
-                    <div id="humid-percentage">33%</div>
-                    <h4>Humidity</h4>
+            <div class="bottom-show">
+                <div class="humid-img"><img src="./assets/rainDrop.webp" alt="Rain Drop"></div>
+                <div class="bottom-measure">
+                    <div class="secondary-big-text" id="humid-percentage">- -%</div>
+                    <h3 class="secondary-small-text">Humidity</h3>
                 </div>
             </div>
-            <div id="wind-show">
-                <div class="img">Wind-Image</div>
-                <div class="wind-measure">
-                    <div id="wind-speed">3.32Km/H</div>
-                    <h4>Wind Speed</h4>
+            <div class="bottom-show">
+                <div class="wind-img"><img src="./assets/windImg.webp" alt="Wind Image"></div>
+                <div class="bottom-measure">
+                    <div class="secondary-big-text" id="wind-speed">- -Km/H</div>
+                    <h3 class="secondary-small-text">Wind Speed</h3>
                 </div>
             </div>
         </div>
