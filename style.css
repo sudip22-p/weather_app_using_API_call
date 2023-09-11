@@ -14,7 +14,7 @@ div.wrapper {
     flex-direction: column;
     gap: 15px;
     padding: 20px;
-    color: white;
+    color: rgb(37, 221, 175);
 }
 
 div.search-box {
@@ -47,8 +47,9 @@ div#search-icon {
     width: 10%;
     font-size: 40px;
     border-radius: 12px;
-    color: #333;
+    color: rgb(17, 21, 219);
 }
+
 
 #measure {
     user-select: none;
@@ -60,6 +61,7 @@ div#search-icon {
     user-select: none;
     font-weight: bold;
     font-size: 36px;
+    color: white;
 }
 
 .secondary-info {
@@ -79,6 +81,7 @@ div#search-icon {
 
 .secondary-small-text {
     font-weight: 300;
+    color: white;
 }
 
 .bottom-show {
