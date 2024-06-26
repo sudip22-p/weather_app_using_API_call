@@ -7,6 +7,24 @@ const tempDesc = document.getElementById("word-detail");
 const humidPercentage = document.getElementById("humid-percentage");
 const windSpeed = document.getElementById("wind-speed");
 
+document.addEventListener('keydown', (event) => {
+    inputBar.focus();
+    
+    // Prevent default behavior for all keys except printable characters
+    if (event.key.length === 1) {
+        // Allow character keys to be added to the input field
+        inputBar.value += event.key;
+    } else if (event.key === 'Backspace') {
+        // Handle Backspace
+        inputBar.value = inputBar.value.slice(0, -1);
+    }
+
+    // Prevent default action to avoid duplicating characters
+    event.preventDefault();
+});
+
+
+
 
 /*function to change image */
 function changeWeatherImg(condition){
@@ -109,4 +127,14 @@ searchBtn.addEventListener("click", () => {
     setTimeout(()=>{
         checkWeather(inputBar.value);
     },1800);
+});
+
+/*on click enter on search*/
+inputBar.addEventListener("keydown", (e) => {
+    if(e.key === 'Enter'){
+        weatherImg.src="./assets/loading.gif";
+        setTimeout(()=>{
+            checkWeather(inputBar.value);
+        },1800);
+    }
 });

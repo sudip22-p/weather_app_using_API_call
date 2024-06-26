@@ -18,19 +18,25 @@
           id="search-bar"
           type="text"
           placeholder="Enter the City Name"
+          aria-label="Search City"
           required
         />
-        <div id="search-icon">
+        <div id="search-icon" aria-label="Search">
           <i class="fa fa-search"></i>
         </div>
       </div>
-      <div>
-        <img  id="weather-image" src="./assets/loading.webp" alt="Rainy" draggable="false" />
+
+      <div class="center-content">
+        <div>
+          <img
+            id="weather-image"
+            src="./assets/loading.webp"
+            alt="Weather"
+            draggable="false"
+          />
+        </div>
       </div>
-      <div class="primary-info">
-        <div id="measure">- -<sup>o</sup>C</div>
-        <div id="word-detail">- - - - - - - - - - - - - -</div>
-      </div>
+
       <div class="secondary-info">
         <div class="bottom-show">
           <div class="humid-img">
@@ -40,9 +46,15 @@
               draggable="false"
             />
           </div>
-          <div class="bottom-measure">
-            <div class="secondary-big-text" id="humid-percentage">- -%</div>
+          <div class="bottom-measure" id="rain-text">
+            <div class="secondary-big-text" id="humid-percentage">N/A %</div>
             <h3 class="secondary-small-text">Humidity</h3>
+          </div>
+        </div>
+        <div class="bottom-show">
+          <div class="primary-info">
+            <div id="measure">N/A<sup>o</sup>C</div>
+            <div id="word-detail"></div>
           </div>
         </div>
         <div class="bottom-show">
@@ -54,7 +66,7 @@
             />
           </div>
           <div class="bottom-measure">
-            <div class="secondary-big-text" id="wind-speed">- -Km/H</div>
+            <div class="secondary-big-text" id="wind-speed">N/A Km/H</div>
             <h3 class="secondary-small-text">Wind Speed</h3>
           </div>
         </div>
